@@ -1,9 +1,9 @@
 const btn = document.getElementById('btn');
 
 btn.addEventListener('click', function () {
-  const red = Math.random() * 255;
-  const green = Math.random() * 255;
-  const blue = Math.random() * 255;
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
 
-  document.body.style.background = `rgb(${red},${green},${blue})`;
+  document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
 });
